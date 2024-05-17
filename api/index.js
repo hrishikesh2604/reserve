@@ -54,7 +54,7 @@ app.use('/admin',AdminRoutes);
 
 //Setting base route 
 app.get('/', (req, res) => {
-   
+    console.log("Rendering index.ejs");
     res.render('index');
 });
 

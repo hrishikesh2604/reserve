@@ -1,0 +1,249 @@
+@font-face {
+  font-family: Poppins_Regular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+body {
+  background: rgb(2,0,15);
+  background: linear-gradient(90deg, rgba(2,0,15,1) 2%, rgba(3,0,39,1) 50%, rgba(5,0,57,1) 84%);
+  font-family: Poppins_Regular;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+#navbar {
+  height: 10vh;
+  width: 100%;
+  border-bottom: 3px solid #111017;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-color: #191a21; */
+  /* background-color: #191c24; */
+  background-color: #191c24;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 2;
+  box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.927);
+}
+
+#navbar img {
+  padding: 1vh 2vw;
+  width: 160px;
+  height: 40px;
+}
+
+nav .page2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 1vw;
+}
+
+nav .page2 h4 {
+  padding: 6px 16px;
+  border: 2px solid rgb(106, 98, 98); /*change here*/
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 380;
+  /* color: rgb(36, 33, 33); */
+  /* color: green; */
+  position: relative;
+  transition: all ease 0.4s;
+  overflow: hidden;
+}
+
+nav h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white; /* change here*/
+  left: 0;
+  bottom: -100%;
+}
+
+nav h4:hover::after {
+  bottom: 0;
+  border-radius: 50px;
+  transition: all ease 0.4s;
+}
+nav h4 a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  z-index: 9;
+}
+
+nav h4:hover a {
+  color: black; /*change here*/
+}
+
+.mainpage {
+  display: flex;
+  height: 100vh;
+}
+
+.mainpage #page1, #page2 {
+  padding-top: 15vh;
+  font-size: 18px;
+  text-align: center;
+  height: 85vh;
+  width: 50vw;
+}
+#page1 #tag1 {
+  width: 7vw;
+  margin-left: 43%;
+  /* background-color: rgba(0, 0, 0, 0.305); */
+  background-color: #228b22;
+  border-radius: 4px;
+}
+
+#page1 .heading, #page2 .heading {
+  font-size: 38px;
+  font-weight: 600;
+  color: rgb(34,139,34);
+  color: linear-gradient(90deg, rgba(34,139,34,1) 19%, rgba(255,255,255,1) 2%);
+  margin-bottom: 3vh;
+}
+
+#page2 .heading{
+  margin-top: 10px;
+}
+#page1 .info, #page2 .info {
+  margin-left: 16vw;
+  text-align: left;
+  font-size: 25px;
+}
+
+#page2  .info{
+  margin-left: 15.5vw;
+}
+.rotate{
+  background-color: none;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  font-weight: 600;
+  overflow: hidden;
+}
+.rotate span{
+  display: block;
+  height: 100%;
+  color: red;
+  animation: spin_words 6s infinite;
+}
+@keyframes spin_words{
+  10%{
+      transform: translateY(-112%);
+  }
+  25%{
+      transform: translateY(-100%);
+  }
+  35%{
+      transform: translateY(-212%);
+  }
+  50%{
+      transform: translateY(-200%);
+  }
+  60%{
+      transform: translateY(-312%);
+  }
+  75%{
+      transform: translateY(-300%);
+  }
+  85%{
+      transform: translateY(-412%);
+  }
+  100%{
+      transform: translateY(-400%);
+  }
+}
+
+#login1, #login2{
+  margin-top: 6vh;
+  margin-bottom: 3vh;
+  font-size: 22px;
+  background-color: #228b22;
+  color: white;
+  border-radius: 6px;
+  height: 5vh;
+  width: 12vw;
+}
+
+#login1:hover, #login2:hover {
+  cursor: pointer;
+  color: #228b22;
+  background-color: white;
+  transition: 0.6s;
+}
+
+
+
+
+
+
+
+
+#footer {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  padding-top: 2vh;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #191c24;
+  min-height: 260px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.colfoot {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 15px;
+}
+
+#logofoot {
+  height: 50px;
+  width: 180px;
+  margin: 30px 60px;
+  padding: 0;
+}
+.foottext {
+  font-size: 17px;
+  align-self: flex-start;
+  margin-left: 50px;
+  padding-left: px;
+}
+#social {
+  display: flex;
+  /* justify-content:space-evenly; */
+  gap: 10px;
+  margin-left: 50px;
+}
+
+.foothead {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+#foottext {
+  margin-left: 70px;
+}
+
+.line-space {
+  letter-spacing: 0.0001em;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
